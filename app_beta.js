@@ -5892,17 +5892,6 @@ function append_files_to_list(path, files) {
 	          <div class="mdui-col-sm-3 mdui-text-right">${item["modifiedTime"]}</div>
 	          <div class="mdui-col-sm-2 mdui-text-right">${item["size"]}</div>
 	          </a>
-            <div class="mdui-col-sm-2 mdui-text-right dummyclass">
-	            <button onclick="window.open('${ddl_link}','_self')" class="mdui-textfield-icon mdui-btn mdui-btn-icon dummyclass" style="float: right;">
-                <i class="mdui-icon material-icons dummyclass">file_download</i>
-              </button>
-              <button onclick="window.open('${p}','_blank')" class="mdui-textfield-icon mdui-btn mdui-btn-icon dummyclass" style="float: right;">
-                <i class="mdui-icon material-icons dummyclass">launch</i>
-              </button>
-              <button onclick="(function setClipboard(value) {var tempInput = document.createElement('input');tempInput.style = 'position: absolute; left: -1000px; top: -1000px';tempInput.value = value;document.body.appendChild(tempInput);tempInput.select();document.execCommand('copy');document.body.removeChild(tempInput);})(window.location.protocol + '//' + window.location.hostname + '${ddl_link}')" class="mdui-textfield-icon mdui-btn mdui-btn-icon dummyclass" style="float: right;">
-                <i class="mdui-icon material-icons dummyclass">content_copy</i>
-              </button>
-            </div>
 	      </li>`;
     }
   }
@@ -6178,14 +6167,14 @@ function file_code(path) {
 <div class="mdui-container">
 <pre id="editor" ></pre>
 </div>
-<div class="mdui-textfield">
-	<label class="mdui-textfield-label">File Name</label>
-	<input class="mdui-textfield-input" type="text" value="${file_name}"/>
-</div>
-<div class="mdui-textfield">
-	<label class="mdui-textfield-label">Download Link</label>
-	<input class="mdui-textfield-input" type="text" value="${href}"/>
-</div>
+// <div class="mdui-textfield">
+// 	<label class="mdui-textfield-label">File Name</label>
+// 	<input class="mdui-textfield-input" type="text" value="${file_name}"/>
+// </div>
+// <div class="mdui-textfield">
+// 	<label class="mdui-textfield-label">Download Link</label>
+// 	<input class="mdui-textfield-input" type="text" value="${href}"/>
+// </div>
 <a href="${href}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 
 <script src="//cdn.jsdelivr.net/gh/cheems/goindex-extended/js/ace.js"></script>
