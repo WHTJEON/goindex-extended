@@ -6275,17 +6275,17 @@ function file_video(path) {
 	<div class="mdui-video-fluid mdui-center" id="dplayer"></div>
 	<br>${playBtn}
 	<!-- ???? -->
-  <div class="mdui-textfield">
-	  <label class="mdui-textfield-label">File Name</label>
-	  <input class="mdui-textfield-input" type="text" value="${file_name}"/>
-  </div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download Link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
+ //  <div class="mdui-textfield">
+	//   <label class="mdui-textfield-label">File Name</label>
+	//   <input class="mdui-textfield-input" type="text" value="${file_name}"/>
+ //  </div>
+	// <div class="mdui-textfield">
+	//   <label class="mdui-textfield-label">Download Link</label>
+	//   <input class="mdui-textfield-input" type="text" value="${url}"/>
+	// </div>
 </div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
-	`;
+// <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
+// 	`;
   $("#content").html(content);
   $("#copy-link").on("click", () => {
     copyToClipboard(url);
